@@ -1,0 +1,295 @@
+\documentclass[a4paper]{jctart19a}
+
+\oddsidemargin=-1.5mm \evensidemargin=-2.5mm
+
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+\usepackage{amsthm,amsfonts,amsmath,amssymb}
+
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{makecell}
+
+%%%%%%%%%%% !!! ВСЕ Поля с вопросами заполняются в редакции !!!
+\newcommand{\jctyear}{????}
+\newcommand{\jctvolume}{??}
+\newcommand{\jctnumber}{??}
+\newcommand{\jctdoi}{DOI:10.25743/ICT.\jctyear.\jctvolume.\jctnumber.???}
+
+\begin{document}
+
+\setcounter{page}{1}
+
+\widowpenalty=10000
+\clubpenalty=10000
+
+\label{pagebegin}
+
+\vspace*{-20mm}
+
+\noindent{{\scriptsize Вычислительные технологии, \jctyear, том \jctvolume, № \jctnumber, с.~\pageref*{pagebegin}--\pageref*{pageend}. \copyright\ ФИЦ ИВТ, \jctyear\hfill ISSN 1560-7534\\[-1.5mm]
+Computational Technologies, \jctyear,  vol. \jctvolume, no. \jctnumber, pp.~\pageref*{pagebegin}--\pageref*{pageend}. \copyright\ FRC ICT, \jctyear\hfill eISSN 2313-691X}}\\[-3mm]
+
+{\centering
+\noindent \rule{16.49cm}{0.5mm}\\
+{\small ???}\\[-2.5mm]
+\noindent \rule{16.49cm}{0.5mm}}\\[3mm]
+
+\markboth{<И.\,О.~Фамилия первого автора>, <И.\,О.~Фамилия остальных авторов>}{<Сокращенное название статьи (до 50 символов)>}
+\vspace*{-7.5mm}
+
+\begin{flushright}
+	{\small \jctdoi}
+\end{flushright}
+
+\title{<Полное название статьи>}\vspace*{-7mm}
+
+\author{\vspace*{-3mm}
+{\sc <И.\,О.~Фамилия первого автора>$^{1,*}$, <И.\,О.~Фамилия второго автора>$^{2,3}$, ...}\\
+$^1$\vtop{\small <Место работы первого автора>, <Почтовый индекс>, <Город>, <Страна>}\\
+$^2$\vtop{\small <Первое место работы второго автора>, <Почтовый индекс>, <Город>, <Страна>}\\
+$^3$\vtop{\small <Второе место работы второго автора>, <Почтовый индекс>, <Город>, <Страна>}\\
+...
+$^\ast$\vtop{\small Контактный автор: <Фамилия Имя Отчество автора для связи (полностью)>, e-mail: \tt <адрес электронной почты>}\\
+{\footnotesize\it Поступила ?? ??? ????~г., доработана ?? ??? ????~г., принята в печать ?? ??? ????~г.}}
+
+\date{}\maketitle
+
+
+\begin{abstract}
+<Текст аннотации (50--100 слов)>
+
+\textit{Ключевые слова:} <ключевые слова (не более 6)>.
+
+\textit{Цитирование}: <Фамилия~И.О. первого автора>, <Фамилия~И.О. второго автора>. <Название статьи>. Вычислительные технологии. \jctyear; \jctvolume(\jctnumber):\pageref*{pagebegin}--\pageref*{pageend}. \jctdoi.
+\end{abstract}
+
+
+\section*{Введение}
+
+После принятия статьи к печати правообладатель, автор (соавторы) направляют в редакцию подписанный лицензионный договор в двух экземплярах на право использования научного произведения в журнале.
+
+
+\section{Рекомендации по оформлению статьи}
+
+Статья представляется в редакцию в виде рукописи (отпечатанной на листах формата~A4 и подписанной авторами), файлов рукописи и файлов рисунков, а также pdf–файла статьи. Наиболее предпочтительная форма представления иллюстраций~--- файлы цветных или черно-белых растровых (с реальным разрешением не менее 300~dpi) или векторных рисунков в форматах png, pdf или eps.
+
+Исходный файл статьи должен быть подготовлен в формате \LaTeXe в классе \textbf{jctart19a} (допускается использование стандартного класса \textbf{article}), в кодировке Windows\linebreak (CP1251). Актуальный файл класса \textbf{jctart19a} и шаблон оформления можно скачать с сайта журнала: \url{http://ict.nsc.ru/jct/help}.
+
+Текст статьи должен быть структурирован: иметь введение, основные разделы и заключение/выводы. Все разделы, кроме введения и заключения, имеют сквозную нумерацию. Объем статьи, включая рисунки и таблицы, не должен превышать 16~страниц машинописного текста, размер шрифта 12~pt.
+
+Файлы рукописи и дополнительных материалов предоставляются в редакцию по электронной почте (на адрес {\tt jct@ict.nsc.ru}) или на MS Windows совместимом\linebreak CD/DVD/USB носителе. Адрес редакции журнала:
+
+ФИЦ ИВТ, просп. Акад. Лаврентьева, 6, 630090, Новосибирск, 90, Россия,
+
+Леониду Борисовичу Чубарову (отв. секретарь)~--- тел.: +7(383)333-18-82;
+
+Галине Григорьевне Митиной (зав. РИО)~--- тел.: +7(383)334-91-23
+
+e-mail: {\tt jct@ict.nsc.ru}.
+
+
+\subsection{Таблицы и рисунки}
+
+Таблицы и рисунки имеют сквозную нумерацию и размещаются в том разделе, в котором встречается первая ссылка на них. Заголовки таблиц и рисунков даются на русском и английском языках. Пример вставки рисунка и ссылки на него приведен на рис.~\ref{fig_1}, пример вставки таблицы~--- в табл.~\ref{tabl_1}.
+
+\begin{figure}[!b]
+	\centering
+	\includegraphics[width=70mm]{ris1.pdf}
+	\caption{<Подрисуночная подпись на русском>\\\hspace{\textwidth}
+	Fig.~\ref*{fig_1}. <Подрисуночная подпись на английском>}
+	\label{fig_1}
+\end{figure}
+
+\begin{table}[!b]
+	\centering\small
+	\caption{<Заголовок таблицы на русском>\\\hspace{\textwidth}
+	Table~\ref*{tabl_1}. <Заголовок таблицы на английском>}\vspace*{2mm}
+	\begin{tabular}{c|c|c|c}
+		\hline
+		$i$ & $N_1\times N_2$ & $R_i$ & $R_{i-1}/R_i$ \\\hline
+		1 & $20\times20$ & $7.2\cdot10^{-4}$ &  $-$ \\\hline
+		2 & $40\times40$ & $9.9\cdot10^{-5}$ & 7.3 \\\hline
+		3 & $80\times80$ & $1.4\cdot10^{-5}$ & 7.1 \\\hline
+		4 & $160\times160$ & $1.7\cdot10^{-6}$ & 8.2
+	\end{tabular}
+	\label{tabl_1}
+\end{table}
+
+Рисунки вставляются в текст статьи с помощью команды \textbf{\textbackslash{}includegraphics} или процедуры \textbf{\textbackslash{}picture}. Они должны быть ясными, иметь четко проработанные детали с учетом возможного последующего уменьшения. Все надписи на рисунках должны читаемыми. Они должны быть выполнены шрифтом того же начертания и размера, что и подрисуночная подпись (Times New Roman, 10~pt):
+\begin{itemize}
+	\item обозначение осей на графиках (функции, переменные) пишутся курсивом ($x_k$, \mbox{$z\cdot10^{-3}$}, $\psi$);
+	\item векторы на рисунках, в тексте и в формулах выделяются командой \textbf{\textbackslash{}vec}~--- жирным шрифтом (латинские символы ($\vec{x}_k$, $\vec{z}$) прямым, а греческие ($\vec{\alpha}$, $\vec{\psi}$)~--- курсивом);
+	\item цифры~--- везде прямо, кроме цифровых обозначений на рисунках (номер кривой, области, блока и т.\,п.), последние даются курсивом (\textsl{1}, \textsl{2}, \ldots);
+	\item в качестве десятичного разделителя используется ``точка'' (1.01);
+	\item все поясняющие надписи: единицы измерения (кг, м, c и т.\,д.), наименование блоков, процессов и т.\,п. выполняются прямым шрифтом и по-русски.
+\end{itemize}
+
+
+\subsection{Благодарности}
+
+Список грантов, проектов и других источников финансирования, а также другие благодарности приводятся после основного текста статьи (в последнем абзаце раздела ``Зак\-лючение''). В случае необходимости отделения результатов, полученных при финансовой поддержке из различных источников, может быть представлено достаточно подробное описание объемом до 250~слов. Раздел ``Благодарности'' оформляются следующим образом.
+
+\vspace*{-2mm}
+\paragraph{\small Благодарности.}\hspace*{-3.5mm} Работа выполнена при финансовой поддержке РФФИ (грант \No~...) и~др.
+
+
+\subsection{Дополнительные материалы}
+
+Дополнительные материалы прилагаются в виде отдельных файлов (в форматах txt, rtf, doc/docx, odt и т.\,д.) и содержат следующие сведения на русском и английском языках:
+\begin{enumerate}
+	\item[1)] заглавие;
+	\item[2)] фамилия, имя, отчество авторов (полностью);
+	\item[3)] авторское резюме;
+	\item[4)] ключевые слова;
+	\item[5)] сведения по каждому автору на русском и английском языках:
+	\begin{itemize}
+		\item фамилия, имя, отчество;
+		\item место работы и должность (название организации дается без сокращений);
+		\item почтовый адрес организации;
+		\item ученая степень и звание;
+		\item год рождения;
+		\item телефоны с кодом города (домашний и служебный), факс, e-mail, URL домашней страницы;
+		\item SPIN-код (для авторов, зарегистрированных на портале Научной электронной библиотеки);
+		\item область научных интересов (краткое резюме).
+	\end{itemize}
+\end{enumerate}
+
+
+\section{Оформление библиографических ссылок}
+
+Библиографические ссылки указываются в порядке упоминания в тексте статьи. Для русскоязычных публикация дополнительно приводится оригинальный перевод (при наличии) или перевод автора (с соответствующей пометкой). Название издания (журнала) и издательства даются без сокращений. Примеры оформления ссылок:
+\begin{itemize}
+	\item Для \textbf{книги или монографии} указываются фамилии и инициалы всех авторов, название, место издания (город), название издательства, год, количество страниц~\cite{1}. Для книг на русском указывается переводная версия~\cite{2,3}.
+	\item Для \textbf{статьи в журнале} даются фамилии и инициалы \textit{всех авторов}, название статьи и журнала, год выпуска, том, номер, страницы, DOI и электронная ссылка (при наличии). Если у журнала есть том и номер, то том указывается за скобкой. а номер в скоках~\cite{4}. Если есть только том или только номер, то имеющиеся данные приводятся в скобках~\cite{5,6}. Названия статьи и журнала на английском языке берутся строго на официальном сайте журнала. Если такого сайта у журнала нет, автор переводит название статьи на английский язык самостоятельно, а название журнала дает в транслитерации. Пример оформления русскоязычной статьи в журнале, который имеет англоязычную версию~\cite{7}.
+	\item Для \textbf{материалов конференций} приводятся фамилии и инициалы всех авторов, название доклада, название конференции, место проведения и место издания сборника. При переводе на английский название конференции указывается на языке оригинала (в транслитерации, если нет английского перевода), в скобках дается перевод названия на английский язык. Место проведения конференции и место издания даются на английском языке~\cite{8}.
+	\item  Для \textbf{ссылки на электронный ресурс} указываются название документа, адрес и время доступа~\cite{9}. Если документ русскоязычный, то перевод библиографической ссылки на английский язык выполняется автором~\cite{10}.
+\end{itemize}
+
+
+\begin{thebibliography}{99}
+	
+\bibitem{1}
+\textbf{Shih~F.Y.}
+Image processing and pattern recognition: Fundamentals and techniques.
+New York: IEEE Press; 2010:~537.
+
+\bibitem{2}
+\textbf{Роуч~П.}
+Вычислительная гидродинамика.
+М.:~Мир; 1980:~618.\\
+\textbf{Roache~P.J.}
+Computational fluid dynamics.
+Albuquerque: Hermosa Publishers; 1976:~446.
+
+\bibitem{3}
+\textbf{Скворцов~А.В.}
+Триангуляция Делоне и ее применение.
+Томск: Издательство Томского государственного университета; 2002:~128.\\
+\textbf{Skvortsov~A.V.}
+Delaunay triangulation and its application [Triangulyatsiya Delone i ee primenenie].
+Tomsk: Izdatel'stvo Tomskogo Universiteta; 2002:~128. (In~Russ.)
+
+\bibitem{4}
+\textbf{Moser~L., Thuraisingham~B., Zhang~J.}
+Services in the Cloud.
+IEEE Transactions on Services Computing.
+2015; 8(2):172--174. DOI:10.1109/TSC.2015.2410351. Available at: \url{https://ieeexplore.ieee.org/document/7055320}.
+
+\bibitem{5}
+\textbf{Piatti~F., Pirola~S., Bissell~M., Nesteruk~I., Sturla~F., Della Corte~A., Redaelli~A., Votta~E.}
+Towards the improved quantification of \textit{in vivo} abnormal wall shear stresses in BAV-affected patients from 4D-flow imaging: Benchmarking and application to real data.
+Journal of Biomechanics.
+2017; (50):93--101. DOI:10.1016/j.jbiomech.2016.11.044.
+
+\bibitem{6}
+\textbf{Антонов~П.В., Бердников~В.С.}
+Влияние формы дна тиглей на сопряженный конвективный теплообмен в методе Бриджмена.
+Известия вузов. Материалы электронной техники.
+2011; (4):21--28.\\
+\textbf{Antonov~P.V., Berdnikov~V.S.}
+Influence of the crucible bottom shape on conjugate convective heat transfer in the Bridgman method.
+Izvestiya Vuzov. Materialy Eektronnoy Tekhniki.
+2011; (4):21--28. (In~Russ.)
+
+\bibitem{7}
+\textbf{Бердников~В.С., Филиппова~М.В., Красин~Б.А., Непомнящих~А.И.}
+Численное моделирование теплофизических процессов при выращивании кристаллов мультикремния методом Бриджмена~--- Стокбаргера.
+Теплофизика и аэромеханика.
+2006; 13(2):275--293.\\
+\textbf{Berdnikov~V.S., Filippova~M.V., Krasin~B.A., Nepomnyashchikh~A.I.}
+Numerical simulation of thermal-physical processes accompanying multisilicon crystal growing by the  method of Bridgman~--- Stockbarger.
+Thermophysics and Aeromechanics.
+2006; 13(2):257--274.
+
+\bibitem{8}
+\textbf{Усманов~Т.С., Гусманов~А.А., Муллагалин~И.З., Мухаметшина~Р.Ю., Червякова~А.Н., Свeшников~А.В.}
+Особенности проектирования разработки месторождений с применением гидроразрыва пласта.
+Труды 6 Международного Симпозиума ``Новые ресурсосберегающие технологии недропользования и повышения нефтегазоотдачи''.
+М.;~2007:~267--272.\\
+\textbf{Usmanov~T.S., Gusmanov~A.A., Mullagalin~I.Z., Mukhametshina~R.Yu., Chervyakova~A.N., Sveshnikov~A.V.}
+Features of the design of field development with the use of hydraulic fracturing [Osobennosti proektirovaniya razrabotki mestorozhdeniy s primeneniem gidrorazryva plasta].
+Trudy 6 Mezhdunarodnogo Simpoziuma ``Novye resursosberegayushchie tekhnologii nedropol`zovaniya I povysheniya neftegazootdachi'' (Proceedings of 6th International Symposium ``New energy saving subsoil technologies and the increasing of the oil and gas impact'').
+Moscow; 2007:~267--272. (In~Russ.)
+
+\bibitem{9}
+Standard performance evaluation corporation, SPEC CPU2000 V1.3.
+Available at: \url{https://www.spec.org/cpu2000} (Accessed March 30, 2020).
+
+\bibitem{10}
+Сендайская рамочная программа по снижению риска бедствий на 2015--2030~годы.
+Организация Объединенных Наций, 2015.
+Адрес доступа: \url{http://cso-central.asia/wp-content/uploads/2014/08/N1524455.docx} (дата обращения 29.10.2020)\\
+Sendai framework for disaster risk reduction 2015--2030.
+United Nations, 2015.
+Available at: \url{http://cso-central.asia/wp-content/uploads/2014/08/N1524455.docx} (Accessed at October 29, 2020) (In Russ.)
+
+\end{thebibliography}
+
+%%%%%%%%% Ниже дается англоязычная часть %%%%%%%%%
+
+\vspace*{-3.3mm}
+{\noindent \rule{11.cm}{0.5mm}}% \vspace*{3mm}
+
+\ru
+\noindent{{\scriptsize Вычислительные технологии, \jctyear, том \jctvolume, № \jctnumber, с.~\pageref*{pagebegin}--\pageref*{pageend}. \copyright\ ФИЦ ИВТ, \jctyear\hfill ISSN 1560-7534\\[-1.5mm]Computational Technologies, \jctyear,  vol. \jctvolume, no. \jctnumber, pp.~\pageref*{pagebegin}--\pageref*{pageend}. \copyright\ FRC ICT, \jctyear\hfill eISSN 2313-691X}}\\[-7mm]
+
+{\centering
+\noindent \rule{16.49cm}{0.5mm}\\
+{\footnotesize ???}\\[-2.5mm]
+\noindent \rule{16.49cm}{0.5mm}}\\[-8mm]
+
+\begin{flushright}
+{\footnotesize  \jctdoi}
+\end{flushright}
+\vspace*{-8mm}
+
+
+\noindent
+\begin{flushleft}\small
+\textbf{<Article title>}\\[1em]
+{\sc <Last name, first name, middle name of the first author>$^{1,*}$, <Last name, first name, middle name of the second author>$^{2,3}$, ...}\\[.5em]
+$^1$\vtop{\footnotesize <Affiliation of the first author>, <Postal code>, <City>, <Country>}\\
+$^2$\vtop{\footnotesize <First affiliation of the second author>, <Postal code>, <City>, <Country>}\\
+$^3$\vtop{\footnotesize <Second affiliation of the second author>, <Postal code>, <City>, <Country>}\\
+$^*$\vtop{Corresponding author: <Last name, first name, middle name>, e-mail: \tt <e-mail address>}
+{\footnotesize\it Received ???, ???, revised ???, ???, accepted ???, ???.}\\[0.5em]
+\end{flushleft}
+
+\small
+
+\begin{center}
+{\small\bf Abstract}\vspace*{-2.5mm}
+\end{center}
+
+<Article resume, 250 words or less>.
+
+{\it Keywords:} keywords (6 or less).
+
+\textit{Citation}: <Authors> <Title>. Computational Technologies. \jctyear; \jctvolume(\jctnumber):\pageref*{pagebegin}--\pageref*{pageend}.\linebreak \jctdoi. (In~Russ.)
+
+\vspace*{-3mm}
+\paragraph{\small Acknowledgements.}\hspace*{-3.5mm} The work is supported by Russian Science Foundation, grant No.~....
+\label{pageend}
+
+\end{document}
